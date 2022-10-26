@@ -8,9 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
-.logo{
-  /* outline: 2px solid green; */
-}
+
 .sdgbg{
   position: absolute;
 animation: sdganimate 20s infinite ;
@@ -57,9 +55,9 @@ ul{
     
   
 }
-nav{
+/* nav{
     
-}
+} */
 .links li {
   padding-bottom: 10px;
  
@@ -192,9 +190,9 @@ header{
     margin: 0;
   }
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
    
-  }
+  } */
   
   .dropdown-content {
     display: none;
