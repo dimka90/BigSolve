@@ -16,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/','en');
 Route::get('/{local}',[WebController::class,'welcome']);
 Route::get('partnership/{local}',[WebController::class,'partnership']);
-
-
+Route::get('volunteer/{local}',[WebController::class,'volunteer']);

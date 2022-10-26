@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.vol-img {
+    height: 400px;
+    width: 100%;
+}
+
+.volunteering{
+    text-align: center;
+    position: relative;
+    bottom: 250px;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{ 
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+.vol-text {
+    width: 1200px;
+    text-align: justify;
+    margin-left: 250px;
+    margin-top: 20px;
+    line-height: 2.5rem;
+    font-size: 28px;
+    color: #061E36;
+}
+
+.h3-2 {
+    margin-top: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.form-text {
+    margin-left: 250px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.reg-form {
+    margin-left: 250px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.input-field {
+    padding:25px 4px;
+    width: 600px;
+    outline: none;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #061E36;
+}
+
+#description , #address {
+    width: 1205px;
+    /*border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+    border-bottom: #061E36 1px solid;*/
+}
+
+.reg-btn {
+    position: relative;
+    top: 40px;
+    right: 1210px;
+    padding: 18px 90px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #061E36;
+}

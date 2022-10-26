@@ -13,4 +13,8 @@ class WebController extends Controller
     public function partnership(){
         return view('structure.partnership');
     }
+
+    public function volunteer(){
+        return View('structure.volunteer');
+    }
 }
