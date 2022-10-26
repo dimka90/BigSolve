@@ -1,0 +1,194 @@
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+ /* Text box layer  */
+.text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+}
+
+#Home{
+    top: 22%;
+}
+
+.text-box h1 {
+    font-size: 45px;
+}
+
+/* second section */
+
+.contain {
+    margin-top: 15px;
+    display: flex;
+    padding: 0% 5% 5% 2%;
+    justify-content: space-between;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+   font-weight: bolder;
+   
+}
+.contain h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.contain .second-sec {
+    padding-top: 0%;
+    padding-left: 5%;
+    color: #000000;
+    line-height: 35px;
+    text-align: justify;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Third section */
+.contain3 {
+    margin-top: 15px;
+    display: flex;
+    padding: 0% 5% 5% 2%;
+    justify-content: space-between;
+    background-size: cover;
+   background-color: #fafafa;
+}
+
+.part-imgs{
+
+    background-color: #fafafa;
+    outline: 2px solid blue;
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+   font-weight: bolder;
+   
+}
+.contain3 h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.contain3 .third-sec {
+    padding-top: 0%;
+    padding-left: 5%;
+    color: #000000;
+    line-height: 35px;
+    text-align: justify;
+    font-size: 20px;
+    position: relative;
+}
+
+.images-con {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 200px;
+    justify-content: space-between;
+    padding-left: 21%;
+    padding-right: 21%
+}
+
+.con3img3{
+    padding-left: 36%;
+}
+/* .d-flex{
+    display: flex;
+}
+
+.bmem{
+    outline: 2px solid blue;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg{
+    margin-top: -10px;
+} */
+
+/* Fourth Section */
+
+.contain {
+    margin-top: 15px;
+    display: flex;
+    padding: 0% 5% 5% 2%;
+    justify-content: space-between;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+   font-weight: bolder;
+   
+}
+.contain h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.contain .fourth-sec {
+    padding-top: 0%;
+    padding-left: 15%;
+    color: #000000;
+    line-height: 35px;
+    text-align: justify;
+    font-size: 20px;
+    position: relative;
+}
+
+/* /* Fifth Section */
+.contain5{
+    margin-left: 15%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+input{
+    padding: 15px 4px;
+    width: 400px;
+    outline: none;
+   
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #061E36;
+}
+
+#f-width{
+    width: 82%;
+
+}
+
+
+.reg-btn{
+    top: 30px;
+    right: 810px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #061E36;
+}
+
+#btn{
+    width: 15%;
+}
