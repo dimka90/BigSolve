@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow:600|Rasa:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('https://unpkg.com/aos@next/dist/aos.css')}}" />
+    <link href="{{asset('https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow:600|Rasa:300,500" rel="stylesheet')}}">
     <script src="javascript/menu.js" defer></script>
     <title>Document</title>
 </head>
@@ -79,90 +79,37 @@
             </nav>
                 </header>
 
-                <div class="hero-con">
-                    <img src="image/HeroImage.png" alt="" srcset="">
-                </div>
-                
-                <div class="transparent-container">
-                    <div class="transparent" data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                        <h1 class="text-animate" style="text-align:center;">Partnership for <br>the goals</h1>
-                        <p class="content">{{__('Partnership content')}}</p>
-                    <button class="transparent-btn"><a href="http:">Become a Partner</a></button> 
-                  
-                    </div>
-                   
-                </div>
-                <div class="sdgbg">
-                    <img src="image/sdg.png">
-                </div>
-                <div class="bg">
-                    <img src="image/bg.svg">
-                    <div class="about-us" id="about" 
-                        data-aos="fade-down"  
-                        data-aos-duration="1000"> 
-                        <h1 style="text-align: center;">{{__('Who we are')}}</h1>
-                        <p style="text-align:justify;line-height:1.8">{{__('About us content')}}</p>
-                        <p style="margin-top:10px; text-align:justify;line-height:1.8">{{__('About us content1')}}
-                        <p style="margin-top:10px; text-align:justify;line-height:1.8;">{{__('About us content2')}}
-                    </div>
-
-                </div>
-                <div class="contribution-con">
-                    <img src="image/contributionImage.png">
-                    <div class="contribute"> 
-                        <div class="row" data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                        >
-                        <h1 style="text-align:center;" class="center">{{__('donor')}}</h1>
-                    <p>{{__('donor content')}}</p>
-                        <div class="cbtn"><button class="contribute-btn">{{__('Make a Donation')}}</button></div>
-                    </div>
-
-                    <div class="row" data-aos="fade-left"    
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out">
-                        <h1 style="text-align:center;" class="center">{{__('volunteer')}}</h1>
-                        <p>{{__('volunteer content')}}</p>
-                        <div class="cbtn"><button class="contribute-btn">{{__('Make a Donation')}}</button></div>
-                    </div>
-                </div>
-
-
-                </div>
-             <div class="footer">
-             <div class="col1">
-                <img class="footer-logo" src="image/whitelogo.png">
-             </div>
-             <div class="col2">
-               <h2 class="contact">Contact us</h2>
-               <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-               </div>
-               <div class="d-flex tele">
-               <p><i class="fa-solid fa-phone"> </i><span class="lite">+234 9034234108</span> </p> 
-               <p><i class="fa-solid fa-envelope"></i><span class="lite">Bigsolve@forums.com</span></p>
-               </div>
-            </div>
-             <div class="program col3">
-                <ul>
-                    <li >Resources</li>
-                    <li>Comunities</li>
-                    <li>Events</li>
-                    <li>Donations</li>
-                </ul>
-             </div>
-            </footer>
                
+                @yield('content')
                 
           
                 
-            
-                @yield('content')
+                <div class="footer">
+                    <div class="col1">
+                    <img class="footer-logo" src="{{asset('image/whitelogo.png')}}">
+                    </div>
+                    <div class="col2">
+                    <h2 class="contact">Contact us</h2>
+                    <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="d-flex tele">
+                    <p><i class="fa-solid fa-phone"> </i><span class="lite">+234 9034234108</span> </p> 
+                    <p><i class="fa-solid fa-envelope"></i><span class="lite">Bigsolve@forums.com</span></p>
+                    </div>
+                    </div>
+                    <div class="program col3">
+                    <ul>
+                        <li >Resources</li>
+                        <li>Comunities</li>
+                        <li>Events</li>
+                        <li>Donations</li>
+                    </ul>
+                    </div>
+                    </footer>
+              
             
 
                 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
