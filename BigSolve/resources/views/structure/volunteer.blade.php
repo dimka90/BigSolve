@@ -3,7 +3,7 @@
 <section>
     <img class="vol-img" src="{{asset('image/volunteer.png')}}" alt="volunteer">
     <p class="volunteering">Volunteering</p>
-    <h3>About Volunteering</h3>
+    <h3 id="">About Volunteering</h3>
     <p class="vol-text">
         BigSolve makes room for anyone with the motive and interest 
         to make an impact but have no idea how or where to start - your 

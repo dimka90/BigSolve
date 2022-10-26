@@ -1,29 +1,32 @@
 body{
     background-color: white;
-    font-family: 'Poppins', sans-serif;
+
 }
 
 
 
  /* Text box layer  */
 .text-box {
-    width: 100%;
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+ font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   color:#fff;
+   /* bottom:-70%; */
+   left:38%;
+   top:35%;
+
+    /* transform: translate(-50%, -50%); */
    
 }
 
 #Home{
-    top: 22%;
+    /* top: 22%; */
 }
 
-.text-box h1 {
+/* .text-box h1 {
     font-size: 45px;
-}
+} */
 
 /* second section */
 
@@ -34,12 +37,21 @@ body{
     justify-content: space-between;
     background-size: cover;
     background-color: #fff;
+  
+}
+.heroimage{
+    position: relative;
+    height: 50vh;
 }
 
 .head2 {
+    width: 100%;
+  
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
+  
+    padding-top:2rem;
    font-weight: bolder;
    
 }
@@ -56,6 +68,7 @@ body{
     text-align: justify;
     font-size: 20px;
     position: relative;
+
 }
 
 /* Third section */
@@ -84,15 +97,18 @@ body{
     font-size: 40px;
     font-weight: bolder;
 }
-
+.second-sec p{
+    font-size: 2rem;
+    line-height: 2;
+}
 .contain3 .third-sec {
     padding-top: 0%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     color: #000000;
-    line-height: 35px;
+    /* line-height: 35px; */
     text-align: justify;
     font-size: 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 .images-con {
@@ -107,6 +123,10 @@ body{
 
 .con3img3{
     padding-left: 36%;
+
+}
+.con3img3 img{
+    width:50%;
 }
 /* .d-flex{
     display: flex;
@@ -134,10 +154,10 @@ body{
 }
 
 .head2 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     margin-bottom: 1em;
-   font-weight: bolder;
+   font-weight: bolder; */
    
 }
 .contain h1{
@@ -190,4 +210,62 @@ input{
 
 #btn{
     width: 15%;
+}
+.hh{
+    
+    margin-left: 42%;
+ padding-bottom:2rem ;
+}
+.xh{
+    margin-left: 5%;
+   font-size: 2rem;
+}
+.partner-fs{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+ 
+
+.form-text {
+    margin-left: 250px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.reg-form {
+    margin-left: 250px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.input-field {
+    padding:25px 4px;
+    width: 600px;
+    outline: none;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #061E36;
+}
+
+#description , #address {
+    width: 1205px;
+    /*border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+    border-bottom: #061E36 1px solid;*/
+}
+
+.reg-btn {
+    position: relative;
+    top: 40px;
+    right: 1210px;
+    padding: 18px 90px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #061E36;
 }

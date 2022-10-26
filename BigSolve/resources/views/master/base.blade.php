@@ -41,7 +41,7 @@
                           <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a href="{{url('hs',Route::currentRouteName())}}">Become a Partner</a>
+                          <a href="{{url(url('partnership',app()->getLocale()),Route::currentRouteName())}}">Become a Partner</a>
                           <a href="{{url('en',Route::currentRouteName())}}">About Partnership</a>
                           <a href="{{url('yu',Route::currentRouteName())}}">Partnership Programs</a>
                           <a href="{{url('yu',Route::currentRouteName())}}">Current Partners</a>
@@ -55,10 +55,10 @@
                           <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="{{url('hs',Route::currentRouteName())}}">{{__('Become a Volunteer')}}</a>
-                            <a href="{{url('en',Route::currentRouteName())}}">{{__('About Volunteering')}}</a>
-                            <a href="{{url('yu',Route::currentRouteName())}}">{{__('Volunteer Community')}}</a>
-                          <a href="{{url('hs',Route::currentRouteName())}}">{{__('Available  Volunteer')}}</a>
+                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('Become a Volunteer')}}</a>
+                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('About Volunteering')}}</a>
+                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('Volunteer Community')}}</a>
+                          <a href="{{url('volunteer',app()->getLocale())}}">{{__('Available  Volunteer')}}</a>
                         
                         </div>
                     </li>

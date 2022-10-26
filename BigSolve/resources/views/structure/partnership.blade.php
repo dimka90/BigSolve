@@ -1,35 +1,33 @@
 @extends('master.base')
 @section('content')
     {{-- Partnership page First Section --}}
-    <section class="header">
 
         
         {{-- partnership image --}}
 
         <div class="heroimage">
-            <img src="{{asset('image/partnership.png')}}" width="100%" height="100%" alt="background"></a>
+            <img src="{{asset('image/partnership.png')}}" alt="background"></a>
         </div>
 
         <div class="text-box" id="Home">
             <!--First Heading-->
-            <h1>OUR PARTNERSHIPS</h1>
+            <h1 style="hhh" >{{__('our partnership program')}}</h1>
         </div>
 
-    </section>
 
     {{-- Partnership page second section --}}
 
     <section>
         <div class="contain">
             <div class="second-sec">
-                <h1 class="head2">About Our Partnerships</h1>
+                <h1 class="head2">{{__('About Our Partnerships')}}</h1>
                 <p> Our Partnerships are the key to success. We work with individuals as well as local,
                     national, and global organizations and companies with like minds and interests to
                     provide helpand resources to those in need of them. We serve as the bridge that connects
                     these individuals to our partners that are in good grounds to make the difference they seek.
                 </p>
                 <p> We are always open to new partners to join us on our journey to make a difference in the world.</p>
-               <p>  Want to join our community of partners? Click <a href="">here</a> to get started</p>
+              
             </div>
         </div>
     </section>
@@ -37,8 +35,8 @@
 <section>
     <div class="contain3">
         <div class="third-sec">
-            <h1 class="head2">The Partnership Platform</h1>
-            <p> The partnership platform is a society created for our partners to interact, strategize,
+            <h1 class="hh">The Partnership Platform</h1>
+            <p class="xh"> The partnership platform is a society created for our partners to interact, strategize,
                 and collaborate to achieve a goal in line with one or all of the SDGs.
             </p>
         </div>
@@ -49,7 +47,7 @@
     {{-- Image 1 --}}
     <div class="images-con">
         <div class="con3img">
-            <img src="{{asset('image/connect.png')}}" width="300" height="300" alt=""></a>
+            <img src="{{asset('image/connect.png')}}"  alt=""></a>
             <p>Meet and connect with individuals from <br> other organizations</p>
         </div>
        
@@ -82,7 +80,7 @@
     <div class="contain">
         <div class="fourth-sec">
             <h1 class="head2">Become A Partner</h1>
-            <p> Our team of professionals carry out background checks on every aspiring partner. This is to <br>
+            <p class="partner-fs"> Our team of professionals carry out background checks on every aspiring partner. This is to <br>
                 enable us verify the integrity of each partner.<br>
                 At the end of five business days from time of registration, emails will be sent to aspiring <br>
                 partners as regards registration status.
@@ -92,25 +90,31 @@
 
 {{-- Section Five  --}}
 <section>
-<div class="contain5">
-    <h2>Fill the form below to register</h2>
+
+
+<section style="background-color: #fafafa;">
+    <h3 class="h3-2">Become A Volunteer</h3>
+
+    <p class="form-text">Fill the form below to get started<p>
+
+    <div class="reg-form">
         <form action="">
-                <input type="text" placeholder="Name of Organisation">
-                <input type="text" placeholder="Location (citytown, country)"> <br>
-                <input type="text" placeholder="Type of Organization (NGO, Academic Institution, etc...)">
-                <input type="text" placeholder="SDG of interest"><br>
-                <input id="f-width" type="email" placeholder="Email Address"><br>
-                <input id="f-width" type="text" placeholder="A brief description of your aims and objective"><br>
-                <input id="f-width" type="text" placeholder="clearly and briefly highlight the principles and methodologies governing this objective"> <br>
-                <input id="f-width" type="text" placeholder="How do you wish to implement these methodologies?"><br>
-                <input type="text" placeholder="Organizations you've worked with. If none , specify.">
-                <input type="text" placeholder="Previous projects. If none, specify."><br>
+        @csrf
+            <input class="input-field" type="text" name="name" id="name" placeholder="Name of Organisation">
+            <input class="input-field" type="email" name="email" id="email" placeholder="Location (citytown, country)"><br>
+            <input class="input-field" type="number" name="phone" id="phone" placeholder="Type of Organization (NGO, Academic Institution, etc...)">
+            <input class="input-field" type="text" name="nationality" id="nationality" placeholder="SDG of interest"br>
+            <input class="input-field" type="text" name="occupation" id="occupation" placeholder="Email Address">
+            <input class="input-field" type="text" name="skills" id="skills" placeholder="A brief description of your aims and objective"><br>
+            <input class="input-field" type="text" name="Sdg" id="sdg"placeholder="How do you wish to implement these methodologies?">
+        
+            <input class="input-field" type="text" name="companies" id="companies" placeholder="Companies you've worked for. if none, specify">
 
+            <textarea class="input-field" name="address" id="address" placeholder="Contact Address" rows="2" ></textarea>
+            <textarea class="input-field" name="description" id="description" placeholder="Organisation you have work for?" cols="30" rows="2"></textarea>
+            <input style="font-size:2rem;"type="button" value="Submit" class="reg-btn">
         </form>
-        <input id="btn" class="reg-btn" type="submit" value="Register"> 
-        Already a partner? <a href="">Login</a>
-
-</div>
+    </div>
 </section>
 
 @endsection
