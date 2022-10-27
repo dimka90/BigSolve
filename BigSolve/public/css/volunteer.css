@@ -77,11 +77,12 @@ h3{
 
 .reg-btn {
     position: relative;
-    top: 40px;
+    top: 55px;
     right: 1210px;
-    padding: 18px 90px;
+    padding: 24px 80px;
     border-radius: 30px;
     font-weight: bold;
     color: white;
     background-color: #061E36;
+    font-size: 1.8rem;
 }

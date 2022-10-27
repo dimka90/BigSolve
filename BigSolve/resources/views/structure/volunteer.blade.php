@@ -2,30 +2,22 @@
 @section('content')
 <section>
     <img class="vol-img" src="{{asset('image/volunteer.png')}}" alt="volunteer">
-    <p class="volunteering">Volunteering</p>
-    <h3 id="">About Volunteering</h3>
-    <p class="vol-text">
-        BigSolve makes room for anyone with the motive and interest 
-        to make an impact but have no idea how or where to start - your 
-        journey of impact can start here. This is also a space for individuals 
-        who are willing to serve with their skills, time, and creativity. 
-        We want people who are ready to make real changes.
+    <p class="volunteering">{{__('Volunteering')}}</p>
+    <h3 id="">{{__('About Volunteering')}}</h3>
+    <p class="vol-text">{{__('Volunteercontent')}}
+       
     </p>
 
-    <p class="vol-text">
-        Volunteers have the free will to decide which organization or partnership 
-        they wish to volunteer for depending on their SDG of interest and if these 
-        organizations are in need of volunteers. Volunteers can also be recruited by 
-        our partners and may have opportunities of joining any of these organizations 
-        full-time.
+    <p class="vol-text">{{__('Volunteercontent1')}}
+        
     </p>
 
 </section>
 
 <section style="background-color: #fafafa;">
-    <h3 class="h3-2">Become A Volunteer</h3>
+    <h3 class="h3-2">{{__('Become A Volunteer')}}</h3>
 
-    <p class="form-text">Fill the form below to get started<p>
+    <p class="form-text">{{__('fill form')}}<p>
 
     <div class="reg-form">
         <form action="">

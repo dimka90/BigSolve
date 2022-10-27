@@ -233,11 +233,22 @@ input{
     font-size: 30px;
 }
 
+input::placeholder{
+    font-size: 1.8rem;
+}
+
+textarea::placeholder{
+    font-size: 1.8rem;
+} 
+
 .reg-form {
     margin-left: 250px;
     margin-top: 40px;
     padding-bottom: 60px;
+    
 }
+
+
 
 .input-field {
     padding:25px 4px;
@@ -247,10 +258,11 @@ input{
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #061E36;
+    margin-left: 20px;
 }
 
 #description , #address {
-    width: 1205px;
+    width: 1230px;
     /*border-top: 0;
     border-left: 0;
     border-right: 0;

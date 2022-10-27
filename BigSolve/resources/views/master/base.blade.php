@@ -23,7 +23,7 @@
        
         <header class="d-flex container">
             <div class="logo">
-                <a href="/"><img src="{{asset('image/logo.png')}}" ></a>
+                <a href="{{url('/',app()->getLocale())}}"><img src="{{asset('image/logo.png')}}" ></a>
 
             </div>
            
@@ -41,11 +41,11 @@
                           <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a href="{{url(url('partnership',app()->getLocale()),Route::currentRouteName())}}">Become a Partner</a>
-                          <a href="{{url('en',Route::currentRouteName())}}">About Partnership</a>
-                          <a href="{{url('yu',Route::currentRouteName())}}">Partnership Programs</a>
-                          <a href="{{url('yu',Route::currentRouteName())}}">Current Partners</a>
-                          <a href="{{url('yu',Route::currentRouteName())}}">Login</a>
+                          <a href="{{url(url(app()->getLocale(),'partnership'),Route::currentRouteName())}}">Become a Partner</a>
+                          {{-- <a href="{{url(app()->getLocale(),'partnership')}}">{{__('About Partnership')}}</a> --}}
+                          {{-- <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Partnership Programs')}}</a> --}}
+                          <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Current Partners')}}</a>
+                          <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Login')}}</a>
                           
                         </div>
                     </li>
@@ -55,10 +55,10 @@
                           <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('Become a Volunteer')}}</a>
-                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('About Volunteering')}}</a>
-                            <a href="{{url('volunteer',app()->getLocale())}}">{{__('Volunteer Community')}}</a>
-                          <a href="{{url('volunteer',app()->getLocale())}}">{{__('Available  Volunteer')}}</a>
+                            <a href="{{url(app()->getLocale(),'volunteer')}}">{{__('Become a Volunteer')}}</a>
+                            {{-- <a href="{{url(app()->getLocale(),'volunteer')}}">{{__('About Volunteering')}}</a>
+                            <a href="{{url(app()->getLocale(),'volunteer')}}">{{__('Volunteer Community')}}</a> --}}
+                          <a href="{{url(app()->getLocale(),'volunteer')}}">{{__('Available  Volunteer')}}</a>
                         
                         </div>
                     </li>
@@ -82,10 +82,9 @@
             </nav>
                 </header>
 
-               
                 @yield('content')
                 
-          
+         
                 
                 <div class="footer">
                     <div class="col1">

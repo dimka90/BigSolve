@@ -135,16 +135,22 @@ header{
 }
 .transparent{
     /* width:25%; */
-   padding:3rem 5rem; 
+   padding:3rem 4rem; 
  
 
     position: absolute;
-    
+    line-height: 1.5;
     font-size:2rem;
     color:white;
-    background-color: hsla(209, 54%, 56%, 0.3);
+    background-color: hsla(209, 54%, 56%, 0.1);
     backdrop-filter: blur(1rem);
-    border-radius: 10px;
+    border-radius: 10px; 
+}
+/* .transparent p{
+  line-height: 1.5;
+} */
+placeholder{
+
 }
 .transparent-btn{
     font-size:1.5rem;
@@ -220,7 +226,7 @@ header{
     display: block;
   }
  .contribution-con{
-  height: 50vh;
+  height: 60vh;
 
   position: relative;
   display: flex;
@@ -436,7 +442,9 @@ margin-right: 4rem;
      margin-bottom: 55rem;
       display: flex;
       justify-content: center;
-      height:75%;
+     
+      
+
     }
     .about-us{
         /* left: 10%; */

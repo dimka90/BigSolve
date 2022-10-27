@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::redirect('/','en');
+Route::redirect('/','en');
 Route::get('/{local}',[WebController::class,'welcome']);
-Route::get('/partnership/{local}',[WebController::class,'partnership']);
-Route::get('/volunteer/{local}',[WebController::class,'volunteer']);
+Route::get('{local}/partnership/',[WebController::class,'partnership'])->name('partnership');
+Route::get('{local}/volunteer/',[WebController::class,'volunteer'])->name('volunteer');
 
 
 // Route::group(['prefix'=>'{local}'],function (){

@@ -5,6 +5,7 @@
         
         {{-- partnership image --}}
 
+        {{-- {{dd(Route::currentRouteName())}} --}}
         <div class="heroimage">
             <img src="{{asset('image/partnership.png')}}" alt="background"></a>
         </div>
@@ -21,12 +22,9 @@
         <div class="contain">
             <div class="second-sec">
                 <h1 class="head2">{{__('About Our Partnerships')}}</h1>
-                <p> Our Partnerships are the key to success. We work with individuals as well as local,
-                    national, and global organizations and companies with like minds and interests to
-                    provide helpand resources to those in need of them. We serve as the bridge that connects
-                    these individuals to our partners that are in good grounds to make the difference they seek.
+                <p> {{__('partnership content')}}
                 </p>
-                <p> We are always open to new partners to join us on our journey to make a difference in the world.</p>
+                <p>{{__('partnership content1')}}</p>
               
             </div>
         </div>
@@ -35,9 +33,8 @@
 <section>
     <div class="contain3">
         <div class="third-sec">
-            <h1 class="hh">The Partnership Platform</h1>
-            <p class="xh"> The partnership platform is a society created for our partners to interact, strategize,
-                and collaborate to achieve a goal in line with one or all of the SDGs.
+            <h1 class="hh">{{__('The Partnership Platform')}}</h1>
+            <p class="xh"> {{__('The Partnership Platformcontent')}}
             </p>
         </div>
     </div>
@@ -79,11 +76,12 @@
 <section>
     <div class="contain">
         <div class="fourth-sec">
-            <h1 class="head2">Become A Partner</h1>
-            <p class="partner-fs"> Our team of professionals carry out background checks on every aspiring partner. This is to <br>
-                enable us verify the integrity of each partner.<br>
-                At the end of five business days from time of registration, emails will be sent to aspiring <br>
-                partners as regards registration status.
+            <h1 class="head2">{{__('Become a Partner')}}</h1>
+            <p class="partner-fs"> {{__('Partnercontent1')}} <br>
+                {{__('Partnercontent2')}}<br>
+                {{__('Partnercontent3')}} <br>
+                {{__('Partnercontent4')}}
+               
             </p>
     </div>
 </section>
@@ -93,9 +91,8 @@
 
 
 <section style="background-color: #fafafa;">
-    <h3 class="h3-2">Become A Volunteer</h3>
-
-    <p class="form-text">Fill the form below to get started<p>
+   
+    <p class="form-text">{{__('fill form')}}<p>
 
     <div class="reg-form">
         <form action="">

@@ -11,7 +11,7 @@
     data-aos-easing="ease-in-out">
         <h1 class="text-animate" style="text-align:center;">Partnership for <br>the goals</h1>
         <p class="content">{{__('Partnership content')}}</p>
-    <button class="transparent-btn"><a href="http:">Become a Partner</a></button> 
+    <button class="transparent-btn"><a href="{{url(app()->getLocale(),'partnership')}}">Become a Partner</a></button> 
   
     </div>
    
