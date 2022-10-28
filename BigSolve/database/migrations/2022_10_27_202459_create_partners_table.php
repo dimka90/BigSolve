@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('sdg');
             $table->string('email')->unique();
             $table->string('description');
-            $table->string('principles');
+            // $table->string('principles');
             $table->string('strategy');
             $table->string('experience');
             $table->string('projects'); 

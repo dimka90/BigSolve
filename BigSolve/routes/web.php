@@ -3,7 +3,7 @@
 use App\Http\Controllers\WebController;
 
 use App\Http\Controllers\AdminController;
-
+use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,7 +38,7 @@ Route::get('{local}/volunteer/',[WebController::class,'volunteer'])->name('volun
  
 // });
 
-Route::post('/register', [WebController::class, 'register']);
+Route::post('{local}/register', [PartnerController::class, 'register']);
 
 Route::post('/volunteering/{local}', [WebController::class, 'volunteering']);
 

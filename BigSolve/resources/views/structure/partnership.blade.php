@@ -95,7 +95,7 @@
     <p class="form-text">{{__('fill form')}}<p>
 
     <div class="reg-form">
-        <form  action="{{url('register')}}" method="POST">
+        <form  action="{{url(app()->getLocale(),'register')}}" method="POST">
         @csrf
             <input class="input-field" type="text" name="name" id="name" placeholder="Name of Organisation" required>
 

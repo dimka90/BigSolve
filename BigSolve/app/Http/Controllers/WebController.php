@@ -45,13 +45,13 @@ class WebController extends Controller
             'sdg' => 'required',
             'email' => 'required|unique:partners',
             'description' => 'required',
-            'principles' => 'required',
+            // 'principles' => 'required',
             'strategy' => 'required',
             'experience' => 'required',
             'projects' => 'required',
             'password' => 'required|max:6 min:4|confirmed'
         ]);
-
+        dd($formdata);
         $partner = new Partner();
         $partner->name = $request->name;
         $partner->location = $request->location;
@@ -59,15 +59,22 @@ class WebController extends Controller
         $partner->sdg = $request->sdg;
         $partner->email = $request->email;
         $partner->description = $request->description;
-        $partner->principles = $request->principles;
+        // $partner->principles = $request->principles;
         $partner->strategy = $request->strategy;
         $partner->experience = $request->experience;
         $partner->projects = $request->projects;
         $partner->password = Hash::make($request->password);
 
-        $partner->save();
+        // $partner->save();
+        
+        if($partner->save()){
+            return 'Success ';
+        }
 
-        return redirect()->back();
+        else{
+            return "invalid";
+        }
+        // return redirect()->back();
     }
 
     public function index(){
