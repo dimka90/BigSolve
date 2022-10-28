@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\WebController;
+
+use App\Http\Controllers\AdminController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::redirect('/','en');
+
 Route::get('/{local}',[WebController::class,'welcome']);
+
 Route::get('{local}/partnership/',[WebController::class,'partnership'])->name('partnership');
+
 Route::get('{local}/volunteer/',[WebController::class,'volunteer'])->name('volunteer');
 
 
@@ -31,3 +37,19 @@ Route::get('{local}/volunteer/',[WebController::class,'volunteer'])->name('volun
         // dd(App::getLocale()
  
 // });
+
+Route::post('/register', [WebController::class, 'register']);
+
+Route::post('/volunteering/{local}', [WebController::class, 'volunteering']);
+
+Route::get('/login/{local}', [WebController::class, 'index']);
+
+Route::get('/current/{local}', [WebController::class, 'current']);
+
+Route::get('/logout/{local}', [WebController::class, 'logout']);
+
+Route::get('/admin/{local}', [WebController::class, 'adminHome'])->middleware('usertype');
+
+Route::post('postlogin/{local}', [WebController::class, 'login']);
+
+Route::get('/adminPartner/{local}', [AdminController::class, 'adminPartner']);

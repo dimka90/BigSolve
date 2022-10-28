@@ -20,7 +20,7 @@
     <p class="form-text">{{__('fill form')}}<p>
 
     <div class="reg-form">
-        <form action="">
+        <form action="{{url('volunteering/{local}')}}" method="POST">
         @csrf
             <input class="input-field" type="text" name="name" id="name" placeholder="Enter Full Name">
             <input class="input-field" type="email" name="email" id="email" placeholder="Enter Email Address"><br>

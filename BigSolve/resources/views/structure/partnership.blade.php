@@ -95,21 +95,31 @@
     <p class="form-text">{{__('fill form')}}<p>
 
     <div class="reg-form">
-        <form action="">
+        <form  action="{{url('register')}}" method="POST">
         @csrf
-            <input class="input-field" type="text" name="name" id="name" placeholder="Name of Organisation">
-            <input class="input-field" type="email" name="email" id="email" placeholder="Location (citytown, country)"><br>
-            <input class="input-field" type="number" name="phone" id="phone" placeholder="Type of Organization (NGO, Academic Institution, etc...)">
-            <input class="input-field" type="text" name="nationality" id="nationality" placeholder="SDG of interest"br>
-            <input class="input-field" type="text" name="occupation" id="occupation" placeholder="Email Address">
-            <input class="input-field" type="text" name="skills" id="skills" placeholder="A brief description of your aims and objective"><br>
-            <input class="input-field" type="text" name="Sdg" id="sdg"placeholder="How do you wish to implement these methodologies?">
-        
-            <input class="input-field" type="text" name="companies" id="companies" placeholder="Companies you've worked for. if none, specify">
+            <input class="input-field" type="text" name="name" id="name" placeholder="Name of Organisation" required>
 
-            <textarea class="input-field" name="address" id="address" placeholder="Contact Address" rows="2" ></textarea>
-            <textarea class="input-field" name="description" id="description" placeholder="Organisation you have work for?" cols="30" rows="2"></textarea>
-            <input style="font-size:2rem;"type="button" value="Submit" class="reg-btn">
+            <input class="input-field" type="text" name="location" id="location" placeholder="Location (citytown, country)" required><br>
+
+            <input class="input-field" type="text" name="organization" id="organization" placeholder="Type of Organization (NGO, Academic Institution, etc...)" required>
+
+            <input class="input-field" type="text" name="sdg" id="sdg" placeholder="SDG of interest" required><br>
+
+            <input class="input-field" type="email" name="email" id="email" placeholder="Email Address" required>
+
+            <input class="input-field" type="text" name="description" id="description" placeholder="A brief description of your aims and objective" required><br>
+
+            <input class="input-field" type="text" name="strategy" id="strategy" placeholder="How do you wish to implement these methodologies?" required>
+        
+            <input class="input-field" type="text" name="experience" id="experience" placeholder="Companies you've worked for. if none, specify" required>
+
+            <input class="input-field" name="projects" type="text" placeholder="Previous projects. If none, specify." required><br>
+
+            <input class="input-field" type="password" name="password" placeholder="password" required>
+
+            <input class="input-field" type="password" name="password_confirmation" placeholder="confirm-password" >
+
+            <button type="submit" style="font-size:2rem; margin-top: 100px; cursor: pointer;">Submit</button>
         </form>
     </div>
 </section>
