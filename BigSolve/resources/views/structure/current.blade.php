@@ -28,7 +28,6 @@
                 <th class="t-deg">Organization</th>
                 <th class="t-deg">SDG</th>
                 <th class="t-deg">Description</th>
-                <th class="t-deg">Principles</th>
             </tr>
 
             @foreach ($current as $current)
@@ -37,7 +36,6 @@
                     <td class="td-deg">{{$current->organization}}</td>
                     <td class="td-deg">{{$current->sdg}}</td>
                     <td class="td-deg">{{$current->description}}</td>
-                    <td class="td-deg">{{$current->principles}}</td>
                 </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
             @endforeach
            

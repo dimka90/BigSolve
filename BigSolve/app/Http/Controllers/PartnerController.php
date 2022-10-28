@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Partner;
+
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Hash;
 
 
@@ -43,7 +45,7 @@ class PartnerController extends Controller
         // $partner->save();
         
         if($partner->save()){
-            return 'Success ';
+            return redirect()->back()->with('message', 'Success!!! We Would Get Back To You');
         }
 
         else{

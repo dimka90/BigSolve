@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('https://unpkg.com/aos@next/dist/aos.css')}}" />
     <link href="{{asset('https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow:600|Rasa:300,500" rel="stylesheet')}}">
     <script src="javascript/menu.js" defer></script>
-    <title>Document</title>
+    <title>BigSolve</title>
 </head>
 <body>
    

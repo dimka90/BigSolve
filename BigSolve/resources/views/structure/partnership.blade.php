@@ -94,6 +94,13 @@
    
     <p class="form-text">{{__('fill form')}}<p>
 
+        @if (session()->has('message'))
+        <div class="alert alert-success" style="font-size: 20px;">
+            {{-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button> --}}
+            {{session()->get('message')}}
+        </div>
+        @endif
+
     <div class="reg-form">
         <form  action="{{url(app()->getLocale(),'register')}}" method="POST">
         @csrf
@@ -117,7 +124,7 @@
 
             <input class="input-field" type="password" name="password" placeholder="password" required>
 
-            <input class="input-field" type="password" name="password_confirmation" placeholder="confirm-password" >
+            <input class="input-field" type="password" name="password_confirmation" placeholder="confirm-password" > <br>
 
             <button type="submit" style="font-size:2rem; margin-top: 100px; cursor: pointer;">Submit</button>
         </form>

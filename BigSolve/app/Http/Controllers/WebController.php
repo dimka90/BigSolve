@@ -51,7 +51,7 @@ class WebController extends Controller
             'projects' => 'required',
             'password' => 'required|max:6 min:4|confirmed'
         ]);
-        dd($formdata);
+        // dd($formdata);
         $partner = new Partner();
         $partner->name = $request->name;
         $partner->location = $request->location;
