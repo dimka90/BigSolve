@@ -77,7 +77,7 @@
                       </div>
                     </li>
                     <li class="border-bottom"><a href="#about" class="lists">{{__('About us')}}</a></li>
-                    <li class="border-bottom"><a href="">{{__('Contact')}}</a></li>
+                    <li class="border-bottom"><a href="#contact">{{__('Contact')}}</a></li>
                 </ul>
             </nav>
                 </header>
@@ -86,7 +86,7 @@
                 
          
                 
-                <div class="footer">
+                <div class="footer" id="footer">
                     <div class="col1">
                     <img class="footer-logo" src="{{asset('image/whitelogo.png')}}">
                     </div>
@@ -97,7 +97,7 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                     </div>
-                    <div class="d-flex tele">
+                    <div class="d-flex tele" id="contact">
                     <p><i class="fa-solid fa-phone"> </i><span class="lite">+234 9034234108</span> </p> 
                     <p><i class="fa-solid fa-envelope"></i><span class="lite">Bigsolve@forums.com</span></p>
                     </div>

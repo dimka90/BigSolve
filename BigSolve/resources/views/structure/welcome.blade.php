@@ -48,7 +48,7 @@
         data-aos-easing="ease-in-out">
         <h1 style="text-align:center;" class="center">{{__('volunteer')}}</h1>
         <p>{{__('volunteer content')}}</p>
-        <div class="cbtn"><button class="contribute-btn">{{__('Make a Donation')}}</button></div>
+        <div class="cbtn"><a href="{{url(app()->getLocale(),'partnership')}}"><button class="contribute-btn">{{__('volunteer')}}</button></a></div>
     </div>
 </div>
 

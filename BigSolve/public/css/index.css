@@ -5,6 +5,21 @@
 
  
 }
+button  a{
+  /* color:red; */
+}
+.transparent-btn:hover{
+  
+  background-color: hsla(209, 54%, 56%,0.5);
+  backdrop-filter: blur(1rem);
+ 
+}
+button  a:hover{
+  color:white;
+  font-size: 2rem;
+ 
+ 
+}
 html {
   scroll-behavior: smooth;
 }
@@ -91,11 +106,18 @@ a{
 }
 .fa-brands{
   color:white;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   padding-top:1rem ;
   font-size: 2rem;
 }
-
+.fa-brands:hover{
+  transform: scale(1.5);
+  color: aqua;
+}
+.fa-solid:hover{
+  transform: scale(1.5);
+  color: aqua;
+}
 .fa-solid{
   color:white;
   font-size: 2rem;
@@ -310,7 +332,7 @@ margin-right: 4rem;
     
         white-space: nowrap;
         overflow: hidden;
-        animation: typewriter 10s steps(17) infinite alternate,
+        animation: typewriter 5s steps(17) infinite alternate,
           blink 800ms steps(17) infinite normal;
         border-right: 5px solid orange;
       }
