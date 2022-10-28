@@ -44,9 +44,16 @@
                           <a href="{{url(url(app()->getLocale(),'partnership'),Route::currentRouteName())}}">Become a Partner</a>
                           {{-- <a href="{{url(app()->getLocale(),'partnership')}}">{{__('About Partnership')}}</a> --}}
                           {{-- <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Partnership Programs')}}</a> --}}
-                          <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Current Partners')}}</a>
-                          <a href="{{url(app()->getLocale(),'partnership')}}">{{__('Login')}}</a>
+                          <a href="{{url('current/{local}')}}">Current Partners</a>
                           
+                          @auth
+                              <a href="{{url('logout/{local}')}}">Logout</a>
+
+                              @else 
+
+                              <a href="{{url('login/{local}')}}">Login</a>
+                        
+                          @endauth
                         </div>
                     </li>
                     <li class="dropdown">
